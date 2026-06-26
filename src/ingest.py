@@ -8,7 +8,7 @@ from langchain_postgres import PGVector
 
 load_dotenv()
 
-for k in ("OPENAI_API_KEY", "DATABASE_URL","PG_VECTOR_COLLECTION_NAME", "PDF_PATH"):
+for k in ("OPENAI_API_KEY", "DATABASE_URL", "COLLECTION_NAME", "PDF_PATH"):
     if not os.getenv(k):
         raise RuntimeError(f"Environment variable {k} is not set")
 

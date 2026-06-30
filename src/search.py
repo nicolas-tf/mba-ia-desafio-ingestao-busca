@@ -62,7 +62,7 @@ def search_prompt(question=None):
     )
 
     # Criar o retriever
-    retriever = vector_connection.as_retriever(search_kwargs={"k": 4})
+    retriever = vector_connection.as_retriever(search_kwargs={"k": 10})
     
     # Criar o prompt
     prompt = PromptTemplate(
